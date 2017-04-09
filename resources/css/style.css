@@ -1,6 +1,7 @@
 #curtain {
 	background-image: url('../img/match-stick.png');
-	background-size: cover;
+	background-size: contain;
+	background-position: center;
 	height: 100vh;
 	width: 100%;
 	position: relative;
@@ -10,7 +11,7 @@ svg {
 	height: 325px;
 	width: auto;
 	position: absolute;
-	top: 10%;
+	top: 8%;
 	left: 41%;
 }
 
