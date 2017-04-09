@@ -7,11 +7,11 @@
 }
 
 svg {
-	height: 250px;
+	height: 325px;
 	width: auto;
 	position: absolute;
-	top: 20%;
-	left: 43%;
+	top: 10%;
+	left: 41%;
 }
 
 path {
@@ -24,13 +24,13 @@ path {
 }
 
 .flame {
-	stroke-dasharray: 630;
+	stroke-dasharray: 920;
 	animation: write1 1s linear;
 }
 
 @keyframes write1 {
 	0% {
-		stroke-dashoffset: 630;
+		stroke-dashoffset: 920;
 	}
 	100% {
 		stroke-dashoffset: 0;
