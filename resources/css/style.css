@@ -14,7 +14,7 @@ path {
 
 .flame {
 	stroke-dasharray: 630;
-	animation: write1 3s linear;
+	animation: write1 1s linear;
 }
 
 @keyframes write1 {
