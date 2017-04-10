@@ -58,7 +58,7 @@ a#enter:hover, a#enter:active {
 	border-bottom: 2px solid #fff;
 }
 
-svg {
+svg#flame-drawing {
 	height: 325px;
 	width: auto;
 	position: absolute;

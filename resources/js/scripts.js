@@ -3,7 +3,6 @@ var Showcase = function Showcase() {
 
 Showcase.prototype = {
 	init: function() {
-		console.log('init');
 		document.getElementById('enter').addEventListener('click', function(event) {
 			event.preventDefault();
 
@@ -18,8 +17,10 @@ Showcase.prototype = {
 	openCurtain: function() {
 		document.getElementById('curtain').className += 'hidden';
 	},
-	destroyCutrain: function() {
-		document.getElementById('curtain').style.display = none; 
+	destroyCurtain: function() {
+		console.log('here');
+		document.getElementById('curtain').style.display = 'none'; 
+		console.log('curtian destroyed');
 	}
 };
 
