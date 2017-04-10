@@ -1,0 +1,95 @@
+/* GENERAL STYLING */
+html, body {
+	font-family: 'Lato', 'Arial' sans-serif !important;
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+}
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+/* --Links-- */
+a:link, a:visited {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 1px;
+	-webkit-transition: border-bottom 0.5s, color 0.5;
+	transition: border-bottom 0.5s, color 0.5s;
+}
+
+a:hover, a:active {
+	border-bottom: 1px solid #fff;
+}
+
+/* CURTAIN STYLING */
+#curtain {
+	background-image: url('../img/match-stick.png');
+	background-size: contain;
+	background-position: center;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	opacity: 1;
+}
+
+#curtain.hidden {
+	-webkit-transition: opacity 2s ease-in-out;
+	-moz transition: opacity 2s ease-in-out;
+	-ms-transition: opacity 2s ease-in-out;
+	-o-transition: opacity 2s ease-in-out;
+	opacity: 0;
+}
+
+a#enter {
+	font-size: 3.0em;
+	position: absolute;
+	left: 10%;
+	bottom: 10%;
+}
+a#enter:link, a#enter:visited {
+	border-bottom: 2px solid transparent;
+}
+a#enter:hover, a#enter:active {
+	border-bottom: 2px solid #fff;
+}
+
+svg {
+	height: 325px;
+	width: auto;
+	position: absolute;
+	top: 8%;
+	left: 50%;
+	margin-left: -125px;
+}
+
+#flame-drawing {
+	display: none;
+}
+
+path {
+	fill: none;
+	stroke: #fff;
+	stroke-width: 4;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+#flame {
+	stroke-dasharray: 920;
+	animation: write1 1s linear;
+}
+
+@keyframes write1 {
+	0% {
+		stroke-dashoffset: 920;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
