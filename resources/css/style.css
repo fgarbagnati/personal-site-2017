@@ -13,6 +13,10 @@ html, body {
 	margin: 0 auto;
 }
 
+section {
+	margin-top: 65px;
+}
+
 /* --Links-- */
 a:link, a:visited {
 	color: #fff;
@@ -25,6 +29,26 @@ a:link, a:visited {
 
 a:hover, a:active {
 	border-bottom: 1px solid #fff;
+}
+
+/* --Headings-- */
+h1 {
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 180%;
+	word-spacing: 2px;
+	text-align: center;
+	margin-top: 50px;
+	letter-spacing: 1px;
+}
+h1:after {
+	display: block;
+	height: 2px;
+	background-color: #B44848;
+	content: " ";
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 20px;
 }
 
 /* CURTAIN STYLING */
@@ -101,6 +125,7 @@ path {
 #header.not-hidden {
 	background: url('../img/smoke.png') no-repeat top center;	
 	background-size: cover;
+	/*background-attachment: fixed;*/
 	position: relative;
 	width: 100%;
 	height: 60vh;
@@ -122,7 +147,7 @@ path {
 }
 
 .text {
-	position: fixed;
+	/*position: fixed;*/
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -176,8 +201,6 @@ nav li.first {
 	margin-left: 40px;
 }
 
-nav a { pointer-events: none !important; }
-
 nav a:link, nav a:visited {
 	color: #B44848;
 	border-bottom: 2px solid transparent;
@@ -193,4 +216,42 @@ nav img {
 	width: 300px;
 	margin: 0px auto;
 	opacity: 0.4;
+}
+
+/* CONTACT */
+#contact ul {
+	list-style: none;
+	padding: 0px;
+	margin: 40px auto;
+	width: 525px;
+}
+
+#contact li {
+	display: inline-block;
+	margin-right: 60px;
+}
+#contact li.last {
+	margin-right: 0px;
+}
+#contact li img {
+	opacity: 0.6;
+	width: auto;
+}
+#contact li img.linkedin {
+	height: 125px;
+	padding-bottom: 1px;
+}
+#contact li img.github {
+	height: 105px;
+	margin-bottom: -1px;
+}
+
+.contact-header {
+	height: 300px;
+	width: 100%;
+	background-image: -webkit-linear-gradient(rgba(255,250,250,0.8), rgba(255,250,250,0.8)), url('../img/good.png');
+	background-image: linear-gradient(rgba(255,250,250,0.8), rgba(255,250,250,0.8)), url('../img/good.png');
+	background-size: cover;
+	color: #fff;
+	background-attachment: fixed;
 }
