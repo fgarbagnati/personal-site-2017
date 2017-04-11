@@ -53,7 +53,7 @@ h1:after {
 
 /* CURTAIN STYLING */
 #curtain {
-	display: none;
+	/*display: none;*/
 	background-image: url('../img/match-stick.png');
 	background-size: contain;
 	background-position: center;
