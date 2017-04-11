@@ -5,6 +5,7 @@ html, body {
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
 	overflow-x: hidden;
+	background-color: #FFFAFA;
 }
 
 .row {
@@ -28,6 +29,7 @@ a:hover, a:active {
 
 /* CURTAIN STYLING */
 #curtain {
+	/*display: none;*/
 	background-image: url('../img/match-stick.png');
 	background-size: contain;
 	background-position: center;
@@ -35,6 +37,7 @@ a:hover, a:active {
 	width: 100%;
 	position: relative;
 	opacity: 1;
+	z-index: 11;
 }
 
 #curtain.hidden {
@@ -58,7 +61,7 @@ a#enter:hover, a#enter:active {
 	border-bottom: 2px solid #fff;
 }
 
-svg {
+svg#flame-drawing {
 	height: 325px;
 	width: auto;
 	position: absolute;
@@ -92,4 +95,102 @@ path {
 	100% {
 		stroke-dashoffset: 0;
 	}
+}
+
+/* HEADER STYLING */
+#header.not-hidden {
+	background: url('../img/smoke.png') no-repeat top center;	
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 60vh;
+	animation: fadeIn 2s;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+.text {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60vh;
+	z-index: 10;
+}
+
+svg#title-img {
+	width: 100%;
+	height: inherit;
+}
+
+svg#title-img text {
+	text-anchor: middle;
+}
+
+svg#title-img #alpha {
+	fill: rgb(255,250,250);
+	opacity: 0.7;
+	z-index: 9;
+	height: 100vh;
+	width: 100%;
+}
+
+svg#title-img #title {
+	letter-spacing: -2px;
+	font-size: 3.5em;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+svg#title-img #base {
+	fill: rgb(255,250,250);
+	mask: url(#mask);
+}
+
+/* NAVIGATION */
+nav { width: 100%; }
+nav ul {
+	list-style: none;
+	margin: 55px auto 40px auto;
+	width: 370px;
+	padding: 0px;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 40px;
+}
+nav li.first {
+	margin-left: 40px;
+}
+
+nav a { pointer-events: none !important; }
+
+nav a:link, nav a:visited {
+	color: #B44848;
+	border-bottom: 2px solid transparent;
+}
+
+nav a:hover, nav a:active {
+	border-bottom: 1px solid #B44848;
+}
+
+nav img {
+	display: block;
+	height: auto;
+	width: 300px;
+	margin: 0px auto;
+	opacity: 0.4;
 }

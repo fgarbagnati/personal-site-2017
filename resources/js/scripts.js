@@ -3,13 +3,13 @@ var Showcase = function Showcase() {
 
 Showcase.prototype = {
 	init: function() {
-		console.log('init');
 		document.getElementById('enter').addEventListener('click', function(event) {
 			event.preventDefault();
 
 			this.playFlameAnimation();
 			setTimeout(this.openCurtain, 1000);
 			setTimeout(this.destroyCurtain, 3000);
+			setTimeout(this.fadeInHeader, 2800);
 		}.bind(this));
 	},
 	playFlameAnimation: function() {
@@ -18,8 +18,11 @@ Showcase.prototype = {
 	openCurtain: function() {
 		document.getElementById('curtain').className += 'hidden';
 	},
-	destroyCutrain: function() {
-		document.getElementById('curtain').style.display = none; 
+	destroyCurtain: function() {
+		document.getElementById('curtain').style.display = 'none';
+	},
+	fadeInHeader: function() {
+		document.getElementById('header').className += ' not-hidden';
 	}
 };
 
