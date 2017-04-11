@@ -22,10 +22,7 @@ Showcase.prototype = {
 		document.getElementById('curtain').style.display = 'none';
 	},
 	fadeInHeader: function() {
-		console.log('fade in ');
 		document.getElementById('header').className += ' not-hidden';
-		// debugger;
-
 	}
 };
 
