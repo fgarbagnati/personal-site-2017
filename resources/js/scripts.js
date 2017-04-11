@@ -9,6 +9,7 @@ Showcase.prototype = {
 			this.playFlameAnimation();
 			setTimeout(this.openCurtain, 1000);
 			setTimeout(this.destroyCurtain, 3000);
+			setTimeout(this.fadeInHeader, 2800);
 		}.bind(this));
 	},
 	playFlameAnimation: function() {
@@ -18,9 +19,13 @@ Showcase.prototype = {
 		document.getElementById('curtain').className += 'hidden';
 	},
 	destroyCurtain: function() {
-		console.log('here');
-		document.getElementById('curtain').style.display = 'none'; 
-		console.log('curtian destroyed');
+		document.getElementById('curtain').style.display = 'none';
+	},
+	fadeInHeader: function() {
+		console.log('fade in ');
+		document.getElementById('header').className += ' not-hidden';
+		// debugger;
+
 	}
 };
 

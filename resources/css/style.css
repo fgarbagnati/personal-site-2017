@@ -28,6 +28,7 @@ a:hover, a:active {
 
 /* CURTAIN STYLING */
 #curtain {
+	/*display: none;*/
 	background-image: url('../img/match-stick.png');
 	background-size: contain;
 	background-position: center;
@@ -95,3 +96,25 @@ path {
 }
 
 /* HEADER STYLING */
+#header.not-hidden {
+	background: url('../img/smoke.png') no-repeat top center;	
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 60vh;
+	animation: fadeIn 2s;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
