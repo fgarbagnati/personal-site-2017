@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+  <link rel="stylesheet" type="text/css" href="vendors/css/animate.min.css">
   <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
   <link rel="stylesheet" type="text/css" href="resources/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
@@ -20,7 +21,7 @@
 		<a href="" id="enter">Enter</a>
 	</div>
 
-	<header id="header">
+	<header id="header" class="not-hidden">
 		<div class="text">
 			<svg id="title-img">
 				<defs>
@@ -37,7 +38,7 @@
 	<nav>
 		<ul>
 			<li class="first"><a href="#">Portfolio</a></li>
-			<li><a href="#">About</a></li>
+			<li><a class="js--scroll-to-about" href="#">About</a></li>
 			<li><a class="js--scroll-to-contact" href="#">Contact</a></li>
 		</ul>
 		<img src="resources/img/glasses.png">
@@ -46,11 +47,48 @@
 	<section id="portfolio">
 	</section>
 
-	<section id="about">
+	<section class="js--section-about" id="about">
+		<div class="section-separator about-separator"></div>
+		<div class="row">
+			<h1>About Me</h1>
+		</div>
+		<div class="row">
+			<div class="col span-1-of-2 img">
+				<img src="resources/img/me.jpg" class="js--wp-1">
+			</div>
+			<div class="col span-1-of-2 text">
+				<p><strong>Name:</strong> Mia. Kind of.</p>
+				<o><strong>Likes:</strong> My dog. All dogs. Plants. Movies. Travel. Bold glasses. Pop culture. Boots. Road trips. DJ-ing on said road trips. Naps. Pretending to be outdoorsy. Bees. Doodling. Doing laundry.</p>
+				<p><strong>Dislikes:</strong> Toes. Mustard. Spiders (though I'm ultimately learning to accept coexistence). My handwriting.</p>
+				<p><strong>Homebase:</strong> Santa Cruz, CA
+			</div>
+		</div>
+		<div class="row">
+			<div class="skills">
+				<h2>Skills</h2>
+				<i class="ion-settings icon-big"></i>
+				<p>Javascript. jQuery. Ruby. HTML. CSS. SASS. Angular. Ember. Bootstrap. Foundation. React. Rails. Sinatra. Postgres. MySQL. SQLite. Git.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="education">
+				<h2>Education</h2>
+				<p>
+					<i class="ion-flag icon-small"></i>
+					<strong>University of California, Irvine</strong>
+					<br><span class="education-line-2"><em>B.A., Film and Media Studies | 2011</em></span>
+				</p>
+				<p>
+					<i class="ion-flag icon-small"></i>
+					<strong>Dev Bootcamp</strong>
+					<br><span class="education-line-2"><em>2014</em></span>
+				</p>
+			</div>
+		</div>
 	</section>
 
 	<section class="js--section-contact" id="contact">
-		<div class="contact-header"></div>
+		<div class="section-separator contact-separator"></div>
 		<div class="row">
 			<h1>Contact Me</h1>
 			<ul>
