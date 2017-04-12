@@ -95,7 +95,6 @@ h2 {
 
 /* CURTAIN STYLING */
 #curtain {
-	display: none;
 	background-image: url('../img/match-stick.png');
 	background-size: contain;
 	background-position: center;
