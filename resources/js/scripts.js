@@ -8,12 +8,16 @@ Showcase.prototype = {
 
 			this.playFlameAnimation();
 			setTimeout(this.openCurtain, 1000);
+			setTimeout(this.unlockScroll, 1300);
 			setTimeout(this.destroyCurtain, 3000);
 			setTimeout(this.fadeInHeader, 2800);
 		}.bind(this));
 	},
 	playFlameAnimation: function() {
 		document.getElementById('flame-drawing').style.display = 'block';
+	},
+	unlockScroll: function() {
+		document.body.className = document.body.className.replace('no-scroll', '');
 	},
 	openCurtain: function() {
 		document.getElementById('curtain').className += 'hidden';
