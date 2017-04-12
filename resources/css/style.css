@@ -25,6 +25,27 @@ section {
 	background-attachment: fixed;
 }
 
+/* --Icons-- */
+.icon-small {
+	display: inline-block;
+	width: 30px;
+	text-align: center;
+	color: #B44848;
+	font-size: 120%;
+	margin-right: 10px;
+	line-height: 120%;
+	vertical-align: middle;
+	margin-top: -5px;
+}
+
+.icon-big {
+	font-size: 250%;
+	display: block;
+	color: #B44848;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
 /* --Links-- */
 a:link, a:visited {
 	color: #fff;
@@ -40,12 +61,15 @@ a:hover, a:active {
 }
 
 /* --Headings-- */
-h1 {
+h1, h2 {
 	font-weight: 300;
 	text-transform: uppercase;
+	text-align: center;
+}
+
+h1 {
 	font-size: 180%;
 	word-spacing: 2px;
-	text-align: center;
 	margin-top: 50px;
 	letter-spacing: 1px;
 }
@@ -57,6 +81,11 @@ h1:after {
 	width: 100px;
 	margin: 0 auto;
 	margin-top: 20px;
+}
+
+h2 {
+	font-size: 110%;
+	margin-bottom: 15px; 
 }
 
 /* CURTAIN STYLING */
@@ -233,6 +262,15 @@ nav img {
 
 #about .text {
 	width: 30%;
+}
+
+#about .education, #about .skills {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#about .education-line-2 {
+	margin-left: 75px;
 }
 
 .about-separator {
