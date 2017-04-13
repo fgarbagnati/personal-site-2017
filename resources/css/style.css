@@ -57,7 +57,7 @@ section {
 
 /* --Links-- */
 a:link, a:visited {
-	color: #fff;
+	color: #B44848;
 	text-decoration: none;
 	border-bottom: 1px solid transparent;
 	padding-bottom: 1px;
@@ -66,7 +66,7 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #B44848;
 }
 
 /* --Headings-- */
@@ -117,6 +117,15 @@ h2 {
 	opacity: 0;
 }
 
+#curtain h2 {
+	color: #fff;
+	position: absolute;
+	bottom: 20%;
+	left: 10%;
+	text-transform: none;
+	font-size: 4.0em;
+}
+
 a#enter {
 	font-size: 3.0em;
 	position: absolute;
@@ -124,6 +133,7 @@ a#enter {
 	bottom: 10%;
 }
 a#enter:link, a#enter:visited {
+	color: #fff;
 	border-bottom: 2px solid transparent;
 }
 a#enter:hover, a#enter:active {
@@ -244,15 +254,6 @@ nav li.first {
 	margin-left: 40px;
 }
 
-nav a:link, nav a:visited {
-	color: #B44848;
-	border-bottom: 2px solid transparent;
-}
-
-nav a:hover, nav a:active {
-	border-bottom: 1px solid #B44848;
-}
-
 nav img {
 	display: block;
 	height: auto;
@@ -283,15 +284,6 @@ nav img {
 
 #portfolio .games-img {
 	border: 1px solid #000;
-}
-
-#portfolio a:link, #portfolio a:visited {
-	color: #B44848;
-	border-bottom: 2px solid transparent;
-}
-
-#portfolio a:hover, #portfolio a:active {
-	border-bottom: 1px solid #B44848;
 }
 
 #portfolio .text {
