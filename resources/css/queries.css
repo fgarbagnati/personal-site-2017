@@ -1,5 +1,9 @@
 /* Big tablet to 1200 (widths smaller than the 1140 row) */
 @media only screen and (max-width: 1200px) {
+  #curtain {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
 }
 
@@ -15,5 +19,5 @@
 
 /* Small phones: from 0px to 480px */
 @media only screen and (max-width: 480px) {
-  
+
 }
