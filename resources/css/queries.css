@@ -15,10 +15,42 @@
   #curtain h2 {
     bottom: 17%;
   }
+
+  svg#title-img #title {
+    font-size: 2.5em;
+  }
+
+  #portfolio p.sub-title {
+    width: 80%;
+  }
+  #portfolio .portfolio-item {
+    margin-top: 25px; 
+  }
+  #portfolio .row img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    float: initial;
+    padding-top: 10px;
+  }
+  #portfolio .text-left, #portfolio .text-right {
+    float: none; 
+    margin: 0 auto;
+  }
+  #portfolio .col {
+    width: 100%;
+  }
+  #portfolio .text {
+    width: 80%;
+  }
 }
 
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
+  #curtain h2, a#enter {
+    font-size: 2.0em;
+    left: 5%;
+  }
 
 }
 
