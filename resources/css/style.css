@@ -312,6 +312,7 @@ nav img {
 }
 
 #about .education-line-2 {
+	display: block;
 	margin-left: 75px;
 }
 
