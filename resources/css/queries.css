@@ -43,6 +43,10 @@
   #portfolio .text {
     width: 80%;
   }
+
+  #about .education, #about .skills {
+    width: 80%;
+  }
 }
 
 /* Small phones to small tablets: from 481px to 767px */
