@@ -56,6 +56,34 @@
     left: 5%;
   }
 
+  #about .col {
+    width: 100%;
+  }
+  #about .img img { display: block; }
+  #about .img img, #about .text {
+    float: initial;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  #contact ul {
+    width: 100%;
+  }
+  #contact li {
+    display: block;
+    margin-right: auto;
+  }
+  #contact li img {
+    width: 40%;
+    margin: 60px auto 0 auto;
+    display: block;
+  }
+  #contact li img.linkedin, #contact li img.github {
+    height: auto;
+  }
+  #contact li.last {
+    margin-right: auto;
+  }
 }
 
 /* Small phones: from 0px to 480px */
