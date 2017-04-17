@@ -262,15 +262,6 @@ nav img {
 	opacity: 0.4;
 }
 
-/*TEMPORARY CONTENT*/
-nav p {
-	width: 45%;
-	text-align: center;
-	margin: 0 auto 20px auto;
-
-}
-/*/TEMPORARY CONTENT*/
-
 /* PORTFOLIO */
 #portfolio p.sub-title {
 	width: 50%;
@@ -321,6 +312,7 @@ nav p {
 }
 
 #about .education-line-2 {
+	display: block;
 	margin-left: 75px;
 }
 
